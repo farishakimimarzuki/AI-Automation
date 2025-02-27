@@ -1,0 +1,21 @@
+1. Install docker by clicking this link: https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*gsmhmc*_gcl_au*MTIyODY5NDM2NC4xNzQwNTM2NjE0*_ga*MTM4NjA5NTAxNi4xNzQwNTM2NjE0*_ga_XJWPQMJYHQ*MTc0MDYyNDk4My4yLjEuMTc0MDYyNTI5Ni41OS4wLjA.
+
+2. Install Git by clicking this link: https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe
+    a. If got windows terminal, select the option (NEW!) Add a Git Bash Profile to Windows Terminal during Select Components installation step
+    b. During Choosing the default editor used by Git, select the editor you familiar with
+
+3. Open terminal and type git clone https://github.com/browser-use/web-ui.git to clone repository
+
+4. Type cd web-ui to change directory
+
+5. Type copy .env.example .env to create a copy of example environment file
+    a. Type cp .env.example .env if you use windows powershell
+
+6. Open the .env file using any text editor and add the API keys
+    a. Type your chrome path at CHROME_PATH= to use your own browser (optional)
+    b. Change CHROME_PERSISTENT_SESSION=false to CHROME_PERSISTENT_SESSION=true to keep the browser open after session ended
+
+7. Type docker compose up --build in terminal
+    a. Type CHROME_PERSISTENT_SESSION=true docker compose up --build if dont want to make browser stay open
+
+8. Type http://localhost:7788 in browser to start WebUI
