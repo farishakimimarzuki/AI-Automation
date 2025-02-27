@@ -22,3 +22,4 @@
 
 10. Open the .env file using any text editor and add the API keys
     a. Type your chrome path at CHROME_PATH= to use your own browser (optional)
+    b. Change CHROME_PERSISTENT_SESSION=false to CHROME_PERSISTENT_SESSION=true to keep the browser open after session ended
