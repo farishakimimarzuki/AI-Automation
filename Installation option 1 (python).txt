@@ -1,0 +1,24 @@
+1. Install Python 3.11 or higher by clicking this link: https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe
+
+2. Install Git by clicking this link: https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe
+    a. If got windows terminal, select the option (NEW!) Add a Git Bash Profile to Windows Terminal during Select Components installation step
+    b. During Choosing the default editor used by Git, select the editor you familiar with
+
+3. Open CMD and type git clone https://github.com/browser-use/web-ui.git to clone repository
+
+4. Type cd web-ui to change directory
+
+5. Type uv venv --python 3.11 (3.11 version is according to your Python version)
+
+6. Type .venv\Scripts\activate to activate the virtual environment
+    a. Type .\.venv\Scripts\Activate.ps1 if you use windows powershell
+
+7. Type uv pip install -r requirements.txt to install phyton packages
+
+8. Type playwright install to install playwright
+
+9. Type copy .env.example .env to create a copy of example environment file
+    a. Type cp .env.example .env if you use windows powershell
+
+10. Open the .env file using any text editor and add the API keys
+    a. Type your chrome path at CHROME_PATH= to use your own browser (optional)
